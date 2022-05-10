@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    background: rgba(24,24,26, 0.75)
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background: rgba(27,27,27, 0.75);
+    padding-top: 15px;
+}
+
+.socialmediabox {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.twitter {
+    color: #1DA1F2;
+}
+
+.twitter:hover {
+    background-color: #1DA1F2;
+    color: white;
+}
+
+.facebook {
+    color: #1877F2;
+}
+
+.facebook:hover {
+    background-color: #1877F2;
+    color: white;
+}
+
+.instagram {
+    color: black;
+}
+
+.instagram:hover {
+    background-color: black;
+    color: white;
+}
+
+.youtube {
+    color: #FF0000;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.youtube:hover {
+    background-color: #FF0000;
+    color: white;
+}
+
+.showcase video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    z-index: -2;
+}
+
+#logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 120px;
+    margin: 10px;
+}
+
+.navbar {
+    float: right;
+    display: block;
+    margin: 15px;
+    padding: 5px;
+    color: whitesmoke;
+    background-color: #142366;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+}
+
+.hero-image {
+    background-image: url(../img/hero-image.jpg);
+    width: 75%;
+    height: 1000px;
+    margin: 50px 0px 75px 235px;
+    filter: drop-shadow(0 0 0.75rem rgb(186,210,234));
+    border-radius: 2%;
+}
+
+.aboutpage {
+    padding: 250px 0px 0px 25px;
+    line-height: 1.5;
+}
+
+.mogstationlogo {
+    width: 20%;
+    position: relative;
+    bottom: 225px;
+    left: 1100px;
+    
+}
+
+.signupbutton {
+    padding: 10px 20px;
+    background-color:  yellow;
+    color:#000000;
+    border: none;
+    border-radius: 2px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.about-h2 {
+    color: #ECF7FF;
+    font-size: 50px;
+    font-style: italic;
+    text-shadow: 3px 3px #52AAEE;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.about-p {
+        line-height: 1.5;
+        font-family: 'Nanum Myeongjo', sans-serif;
+}
+
+.summarypage {
+    width: 100%;
+    height: 100%;
+    padding: 25px 0 50px 0;
+    background: rgba(255, 255, 255, 0.75);
+    margin-bottom: 50px;
+}
+
+.spacingsummarypage {
+    line-height: 1.5;
+    font-family: 'Nanum Myeongjo', sans-serif;
+}
+
+.column {
+    display: flex;
+    width: 20%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.box {
+    padding: 2em;
+    border: 1px solid #ccc;
+    display: block;
+    
+    width: 25%;
+    height: 100%;
+    background:rgba(255, 255, 255, 0.75);
+    margin: 5px;
+    border-radius: 5%;
+}
+  
+.box:hover {
+    filter: drop-shadow(0 0 0.75rem rgb(255,255,255));
+    position: relative;
+    display: block;
+    height: auto;
+    top: -10px;
+}
+
+.learnmore {
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+.box:hover .learnmore {
+    background-image: linear-gradient(to right, #4C5FBF ,#44A9DE, #FD9935);
+}
+
+.aboutimg {
+    width: 100%;
+}
+
+.productpage {
+    width: 100%;
+    height: auto;
+    padding: 25px 0 50px 0;
+    background: rgba(255, 255, 255, 0.75);
+    margin-bottom: 50px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #444;
+}
+  
+  /* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.hamburger {
+    display: block;
+    position: relative;
+    float: right;
+    top: 0;
+    width: 35px;
+    cursor: pointer;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 5px;
+    background-color: orangered;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+    position: relative;
+    z-index: 100;
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+    position: relative;
+    z-index: 100;
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+    background-color: black;
+    padding-top: 120px;
+    transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+    left: 0;
+}
+
+.mobile-nav a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 12px 16px;
+    background-color: yellowgreen;
+
+    text-decoration: none;
+    color: blue;
+}
+
+.mobile-nav a:hover {
+    background-color: aqua;
+}
+
+@media (min-width: 768px) {
+    .mobile-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+td {
+    text-align: center;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .divarea {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+.buttonsubmit {
+    width: 100%;
+}
