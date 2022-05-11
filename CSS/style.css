@@ -291,6 +291,12 @@ footer {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+@media (max-width: 490px) {
+    .about-h2 {
+        font-size: 38px;
+    }
+}
+
 .about-p {
     line-height: 1.5;
     font-family: 'Nanum Myeongjo', sans-serif;
