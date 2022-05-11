@@ -244,6 +244,10 @@ footer {
     right: 25px;
 }
 
+.mogstationlogo:hover {
+    filter: brightness(0.3) invert(1);
+}
+
 @media (max-width: 768px) {
     .mogstationlogo {
         filter: brightness(0.3) invert(1);
