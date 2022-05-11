@@ -15,13 +15,18 @@ for (i = 0; i < acc.length; i++) {
 }
 
 //Hamburger menu
+const menu_btn = document.querySelector('#hamburger');
+const mobile_menu = document.querySelector('#mobile-nav');
 
+menu_btn.addEventListener('click', function () {
+  menu_btn.classList.toggle('is-active');
+  console.log("Menu Button");
+  mobile_menu.classList.toggle('is-active');
+  console.log("Mobile Nav is Active");
+});
 
-    const menu_btn = document.querySelector('.hamburger');
-    const mobile_menu = document.querySelector('.mobile-nav');
-
-    menu_btn.addEventListener('click', function () {
-        menu_btn.classList.toggle('is-active');
-        mobile_menu.classList.toggle('is-active');
-    });
-
+mobile_menu.addEventListener ('click', function () {
+  mobile_menu.classList.toggle('is-active');
+  console.log("Mobile Menu");
+  menu_btn.classList.toggle('is-active');
+});
