@@ -59,7 +59,7 @@ nav {
     text-decoration: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     nav {
         display: none;
     }
@@ -81,7 +81,7 @@ nav {
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .hamburger {
         display: none;
     }
@@ -247,9 +247,14 @@ footer {
 @media (max-width: 768px) {
     .mogstationlogo {
         filter: brightness(0.3) invert(1);
-        right: 0;
         display: flex;
         justify-content: center;
+    }
+
+    .mogsize {
+        width: 85%;
+        height: auto;
+        margin: 0 auto;
     }
 }
 
@@ -261,6 +266,10 @@ footer {
     border-radius: 2px;
     margin-top: 25px;
     font-weight: bold;
+}
+
+.signupbutton:hover {
+    color:#1877F2;
 }
 
 @media (max-width: 768px) {
@@ -342,28 +351,35 @@ footer {
     background-color: black;
 }
 
+.carouseltext {
+    text-align: center;
+    color:#000000;
+}
+
+.carousel-background {
+    background-color: #F6F5FB !important;
+}
+
+@media (max-width: 990px) {
+    .learnmore {
+    background-image: linear-gradient(to right, #4C5FBF ,#44A9DE, #FD9935);
+    }
+}
+
 .box:hover .learnmore {
     background-image: linear-gradient(to right, #4C5FBF ,#44A9DE, #FD9935);
 }
 
 @media (min-width: 990px) {
-
-}
-
-@media (min-width: 768px) {
     .container-mobile {
         display: none;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
     .container-desktop {
         display: none;
     }
-}
-
-.carouseltext {
-    padding-bottom: 25px;
 }
 
 .aboutimg {
