@@ -236,8 +236,8 @@ footer {
 }
 
 .heroimage {
-    width:100%;
-    height:100%;
+    width: auto;
+    height:auto;
     z-index: 100;
     background-image: url(../IMG/hero-image.jpg);
     object-fit: contain;
@@ -245,34 +245,26 @@ footer {
     border-radius: 25px;
 }
 
-@media (max-width: 768px) {
-    .heroimage {
-        height: 850px;
-    }
-}
-
 .heropage {
     padding: 250px 0px 250px 25px;
     line-height: 1.5;
 }
 
-.mogstationlogo {
-    position: absolute;
-    top: 0px;
-    right: 25px;
+@media (max-width: 768px) {
+    .heropage {
+        padding: 50px 25px 75px 25px;
+    }
 }
 
-.mogstationlogo:hover {
+.mogstationlogo {
     filter: brightness(0.3) invert(1);
 }
 
-@media (max-width: 768px) {
-    .mogstationlogo {
-        filter: brightness(0.3) invert(1);
-        display: flex;
-        justify-content: center;
-    }
+.mogstationlogo:hover {
+    filter: brightness(0.3) invert(0);
+}
 
+@media (max-width: 768px) {
     .mogsize {
         width: 85%;
         height: auto;
