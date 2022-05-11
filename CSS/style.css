@@ -23,6 +23,7 @@ header {
 @media (max-width: 768px) {
     header {
         height: 75px;
+        background: rgb(24,24,26);
     } 
 }
 
@@ -171,6 +172,12 @@ footer {
     height: 200px;
     background: rgba(27,27,27, 0.75);
     padding-top: 15px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        background: rgb(27,27,27);
+    }
 }
 
 .socialmediabox {
