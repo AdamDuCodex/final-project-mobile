@@ -146,6 +146,15 @@ nav {
     color: rgb(255, 255, 255);
 }
 
+.space-header {
+    width: auto;
+    height: 250px;
+}
+
+.space-about {
+    width: auto;
+    height: 100px;
+}
 
 footer {
     width: 100%;
@@ -222,7 +231,6 @@ footer {
     z-index: 100;
     background-image: url(../IMG/hero-image.jpg);
     object-fit: contain;
-    margin: 250px auto 150px auto;
     filter: drop-shadow(0 0 0.75rem rgb(255,255,255));
     border-radius: 25px;
 }
@@ -255,11 +263,11 @@ footer {
         justify-content: center;
     }
 
-/*     .mogsize {
+    .mogsize {
         width: 85%;
         height: auto;
         margin: 0 auto;
-    } */
+    }
 }
 
 .signupbutton {
