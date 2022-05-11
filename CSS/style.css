@@ -122,7 +122,7 @@ nav {
     left: 100%;
     width: 100%;
     min-height: 100vh;
-    z-index: 98;
+    z-index: 1000;
     background-color: rgb(56, 56, 56);
     padding-top: 120px;
     transition: 0.4s;
@@ -255,11 +255,11 @@ footer {
         justify-content: center;
     }
 
-    .mogsize {
+/*     .mogsize {
         width: 85%;
         height: auto;
         margin: 0 auto;
-    }
+    } */
 }
 
 .signupbutton {
@@ -378,6 +378,10 @@ footer {
 
 .box:hover .learnmore {
     background-image: linear-gradient(to right, #4C5FBF ,#44A9DE, #FD9935);
+}
+
+.container-mobile {
+    z-index: 0;
 }
 
 @media (min-width: 990px) {
